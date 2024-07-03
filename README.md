@@ -1,11 +1,12 @@
-# Jamf-Pro_Script
+# Scripts for Jamf Pro
 
-## 概要(Overview)
-mac 管理のための便利なスクリプトを掲載予定 <br/>
-A collection of useful Scripts for mac management
+## 概要 (Overview)
+Mac 管理のための便利なスクリプトを掲載予定 <br/>
+A collection of useful scripts for Mac management
 
-## コンテンツ(Contents)
- | Filename | Description(J/E) |
+## コンテンツ (Contents)
+ | Filename | Description (JA/EN) |
  | --- | --- |
- | jamf-management-framework.sh | Jamf管理フレームワークの再配備と再登録 <br />  redeploy the Jamf management framework without having to unenroll and re-enroll a computer. |
+ | redeployJamfManagementFramework.sh | Jamf管理フレームワークの再配備と再登録 <br />  Redeploys the Jamf management framework without having to unenroll and re-enroll a computer. |
+  | disableFileVault2.sh | FileVault 2 の無効化 <br />  Disables FileVault 2. |
  |  |  |  |
