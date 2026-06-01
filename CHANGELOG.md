@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 2026-05-16
+## 2026-05-31
 
 ### disableFileVault.sh (旧: disableFileVault2.sh)
 
