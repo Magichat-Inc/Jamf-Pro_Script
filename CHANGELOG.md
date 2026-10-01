@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2026-10-01
+
+### redeployJamfManagementFramework.sh
+
+#### API エンドポイントの変更
+- トークン失効エンドポイントを `/api/v1/auth/invalidateToken` から `/api/v1/auth/invalidate-token` に変更
+- トークン取得エンドポイントを `/api/oauth/token` から `/api/v1/oauth/token` に変更
+
+---
+
 ## 2026-05-31
 
 ### disableFileVault.sh (旧: disableFileVault2.sh)

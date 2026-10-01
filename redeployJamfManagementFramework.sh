@@ -48,7 +48,7 @@ api_token=""
 invalidate_token() {
     if [[ -n "$api_token" ]]; then
         curl --silent --fail --request POST \
-            --url "${jss_url}/api/v1/auth/invalidateToken" \
+            --url "${jss_url}/api/v1/auth/invalidate-token" \
             --header "Authorization: Bearer ${api_token}" || true
     fi
 }
@@ -57,7 +57,7 @@ trap invalidate_token EXIT INT TERM
 # OAuth 2.0 クライアントクレデンシャルフローでアクセストークンを取得
 # JSON パースは plutil を使用（python3 は Xcode CLI Tools 未インストール環境では使用不可）
 api_token=$(curl --silent --fail --request POST \
-    --url "${jss_url}/api/oauth/token" \
+    --url "${jss_url}/api/v1/oauth/token" \
     --header "Content-Type: application/x-www-form-urlencoded" \
     --data-urlencode "grant_type=client_credentials" \
     --data-urlencode "client_id=${client_id}" \
