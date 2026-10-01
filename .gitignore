@@ -1,0 +1,5 @@
+# Backup files
+*.bak
+
+# macOS
+.DS_Store
